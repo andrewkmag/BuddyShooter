@@ -10,7 +10,7 @@
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+* [License](#license)
 
 
 ## General Information
@@ -48,7 +48,6 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
 - This project was inspired by...
 - This project was based on [this Udemy guide/tutorial](https://www.udemy.com/course/unrealengine-cpp/).
 - Many thanks to Tom Looman and Epic Games for inspiring this game!
@@ -62,4 +61,3 @@ Created by [@andrewkmag](https://github.com/andrewkmag) -- feel free to contact 
 ## License
 ### GNU GPL v3
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)    
-`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
