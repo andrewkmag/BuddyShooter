@@ -12,14 +12,12 @@
 * [Contact](#contact)
 * [License](#license)
 
-
 ## General Information
 - Provide general information about your project here.
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
 - Why did you undertake it?
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
 
 ## Softwares Used
 - Unreal Editor - Version: 5.1.0-23058290+++UE5+Release-5.1
@@ -34,8 +32,7 @@ Planned features here:
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Project Status
-Project is: _in progress_
-
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
 ## Room for Improvement
 
@@ -46,17 +43,13 @@ To do:
 - Online Multiplayer functionality
 - Main Menu
 
-
 ## Acknowledgements
 - This project was inspired by...
 - This project was based on [this Udemy guide/tutorial](https://www.udemy.com/course/unrealengine-cpp/).
 - Many thanks to Tom Looman and Epic Games for inspiring this game!
 
-
 ## Contact
 Created by [@andrewkmag](https://github.com/andrewkmag) -- feel free to contact me!
-
-
 
 ## License
 ### GNU GPL v3
