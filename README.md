@@ -1,5 +1,5 @@
 # BuddyShooter
-> A fun 3rd Person Shooter game created with the idea of supporting co-op/multiplayer functionality. Primarily being built using Unreal Engine 5 and C++.
+> A fun 3rd Person Shooter game created with the idea of supporting co-op/multiplayer functionality. Primarily being built using Unreal Engine 4 and C++.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -13,19 +13,16 @@
 * [License](#license)
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Initially it was planned to create this game using Unreal Engine 5, but due to scarce assets available for UE5 as desired it was changed to be created using UE4 instead and planned migration to UE5 in the future.
 
 ## Softwares Used
-- Unreal Editor - Version: 5.1.0-23058290+++UE5+Release-5.1
+- Unreal Editor - Version: 4.27.2-18319896+++UE4+Release-4.27
 - Microsoft Visual Studio Community 2019 - Version 16.11.22
 
 ## Features
 Planned features here:
 - Online Multiplayer (In Progress)
+- Firefight game mode (online and offline PVE)
 
 ## Screenshots
 - To Be Added ...
@@ -37,11 +34,12 @@ Planned features here:
 ## Room for Improvement
 
 Room for improvement:
-- To be updated accordingly upon further completion of project
+- To be updated accordingly upon further completion of project ...
 
 To do:
 - Online Multiplayer functionality
 - Main Menu
+- Steamworks SDK Integration
 
 ## Acknowledgements
 - This project was inspired by...
