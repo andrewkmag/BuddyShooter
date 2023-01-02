@@ -12,23 +12,24 @@ AShooterCharacter::AShooterCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	// Setup 3rd Person follow camera parameters:
+	// Set spring arm connection of camera to character
 	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComp"));
 	SpringArmComp->SetupAttachment(RootComponent);
 	SpringArmComp->bUsePawnControlRotation = true;
 
-	// Set Camera Position from character using arbitrary values
+	// Set desired third-person camera position from character
 	SpringArmComp->TargetArmLength = 300.f;
 	SpringArmComp->SocketOffset.X = 92.f;
 	SpringArmComp->SocketOffset.Y = 50.f;
 	SpringArmComp->SocketOffset.Z = -14.f;
 
+	// Connect camera component to spring arm components
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));
 	CameraComp->SetupAttachment(SpringArmComp, USpringArmComponent::SocketName);
 
-	// Enable/disable ability to crouch
+	// Enable/disable ability to crouch and jump
 	GetMovementComponent()->GetNavAgentPropertiesRef().bCanCrouch = true;
-
+	GetMovementComponent()->GetNavAgentPropertiesRef().bCanJump = true;
 }
 
 // Called when the game starts or when spawned
@@ -86,6 +87,7 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	// Bind Action inputs
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &AShooterCharacter::BeginCrouch);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &AShooterCharacter::EndCrouch);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 
 }
 
