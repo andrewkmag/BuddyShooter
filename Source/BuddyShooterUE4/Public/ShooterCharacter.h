@@ -44,4 +44,7 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	// Override of GetPawnViewLocation to utilize the camera "eyes"
+	// instead of the actor location (eye height)
+	virtual FVector GetPawnViewLocation() const override;
 };
